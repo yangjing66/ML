@@ -1,0 +1,15 @@
+import numpy as np
+path = "abc/data_set/datingTestSet.txt"
+data = [ ]
+labels = [ ]
+open_file=open(path,mode='r',encoding='gbk')
+STR=open_file.read()
+lines=STR,split('\n')
+for line in lines:
+    f_l=line.split('\t')
+    x1,x2,x3,label=float(f_l[0]),float(f_l[1]),float(f_l[2]),f_l[3]
+    data.append([x1,x2,x3])
+    label.append(label)
+    
+data=np.array(data)
+labels = nparray(labels)
